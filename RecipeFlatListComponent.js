@@ -44,7 +44,7 @@ export default class RecipeFlatListComponent extends Component {
         {
             method: 'GET',
             headers: {
-                'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6Mn0.MGBf-reNrHdQuwQzRDDNPMo5oWv4GlZKlDShFAAe16s',
+                'Authorization': this.props.navigation.state['params']['token'],
                 'Content-Type': 'application/json'
             },
         }).then((response) => {
